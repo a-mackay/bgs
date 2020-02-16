@@ -6,21 +6,17 @@ import { bgData } from "./Bgs.js";
 function App() {
     return (
         <div className="App">
-            <div className="SplitPane">
-                <NavPane></NavPane>
-                <div className="RightPane">
-                    <BgTable/>
-                    <Footer/>
-                </div>
-            </div>
+            <Header/>
+            <BgTable/>
+            <Footer/>
         </div>
     );
 }
 
-function NavPane() {
+function Header() {
     return (
-        <div className="NavPane">
-            <div className="NavPaneTitle">
+        <div className="Header">
+            <div className="HeaderTitle">
                 We don't own enough boardgames
             </div>
         </div>
@@ -34,96 +30,78 @@ function BgTable() {
         <table className="BgTable">
             <tr>
                 <th>Boardgame</th>
-                <th>Weight</th>
                 <th>Owner</th>
             </tr>
-            {bgs.map((bg, index) => BgRow(bg, index % 2 === 0))}
+            {allCategories().map(cat => {
+                return <BgTableSection
+                    title={cat.name}
+                    iconClassName={cat.className}
+                    bgs={bgs.filter(bg => bg.complexity === cat.id)}
+                />
+            })}
         </table>
     )
+}
+
+function BgTableSection({title, iconClassName, bgs}) {
+    return (
+        <>
+            <tr className="BgTableSectionTitleRow">
+                <td colSpan="2">
+                    {BgTableSectionTitle(title, iconClassName)}
+                </td>
+            </tr>
+            {bgs.map((bg, index) => BgRow(bg, index % 2 === 0))}
+        </>
+    )
+}
+
+function BgTableSectionTitle(title, iconClassName) {
+    return (
+        <div className="BgTableSectionTitle">
+            {Icon(iconClassName)}
+            <div className="BgTableSectionTitleText">{title}</div>
+        </div>
+    )
+}
+
+function category(id, name, className) {
+    return {
+        "id": id,
+        "name": name,
+        "className": className
+    }
+}
+
+function allCategories() {
+    return [
+        category(5, "Gigantic Brain", "GiganticBrain"),
+        category(4, "Big Brained", "BigBrained"),
+        category(3, "Normal", "Normal"),
+        category(2, "Simpleton", "Simpleton"),
+        category(1, "Complete Pinhead", "CompletePinhead"),
+        category(0, "Shelf Of Shame", "ShelfOfShame")
+    ]
 }
 
 function BgRow(bg, isOddRow) {
     let className = isOddRow ? "OddTableRow" : "EvenTableRow";
 
-    if (bg.isBlacklisted) {
-        return BlacklistedBgRow(bg, className);
-    } else {
-        return (
-            <tr className={className}>
-                <td>{bg.name}</td>
-                <td>{Icons(bg.complexity)}</td>
-                <td>{bg.owner}</td>
-            </tr>
-        )
-    }
-}
-
-function BlacklistedBgRow(bg, className) {
     return (
         <tr className={className}>
-            <td>
-                <s>{bg.name}</s>
-            </td>
-            <td>
-                <BlacklistedIcons/>
-            </td>
+            <td>{bg.name}</td>
             <td>{bg.owner}</td>
         </tr>
     )
 }
 
-function Icons(complexity) {
-    var imageClassName;
-    var imageCount;
-    var title;
-    let brain = "Brain";
-    let pinhead = "Pinhead";
-
-    if (complexity <= 2) {
-        imageClassName = pinhead;
-        imageCount = 1;
-        title = "Pinhead"
-    } else if (complexity === 3) {
-        imageClassName = brain;
-        imageCount = 1;
-        title = "Requires Brain"
-    } else if (complexity === 4) {
-        imageClassName = brain;
-        imageCount = 2;
-        title = "Big Brain"
-    } else {
-        imageClassName = brain;
-        imageCount = 5;
-        title = "Gigantic Brain"
-    }
-
-    return (
-        <div className="Icons" title={title}>
-            {range(1, imageCount).map(_index => Icon(imageClassName))}
-        </div>
-    )
-}
-
 function Footer() {
-    return <div className="Footer"></div>
-}
-
-function BlacklistedIcons() {
-    return (
-        <div className="Icons" title={"Shelf of Shame"}>
-            {Icon("Blacklisted")}
-        </div>
-    )
+    return <div className="Footer">Pioneering site design by a-mackay</div>
 }
 
 function Icon(imageClassName) {
     let className = `Icon ${imageClassName}`;
     return <div className={className}/>
-}
-
-function range(startIndex, endIndex) {
-    let size = endIndex - startIndex + 1;
-    return Array.from(new Array(size), (_x, i) => i + startIndex);
 }
 
 export default App;
