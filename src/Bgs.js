@@ -13,6 +13,7 @@ export function bgData() {
         bg("Escape the Dark Castle", 1, "J"),
         bg("Fallen Land", 2, "J"),
         bg("Fortress America", 3, "J"),
+        bg("Fury of Dracula", 4, "J"),
         bg("Imperial Assault", 4, "J"),
         bg("Legendary Encounters: Alien", 3, "J"),
         bg("Lord of the Rings", 2, "J"),
