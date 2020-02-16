@@ -28,6 +28,7 @@ export function bgData() {
         bg("Root", 4, "A"),
         bg("Secret Hitler", 1, "J"),
         bg("Scythe", 4, "J"),
+        bg("Star Wars: Outer Rim", 2, "J"),
         bg("Startups", 1, "A"),
         bg("Terraforming Mars", 3, "T"),
         bg("Underwater Cities", 4, "A")
