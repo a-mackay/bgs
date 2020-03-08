@@ -34,6 +34,7 @@ export function bgData() {
         bg("Scythe", 5, "J"),
         bg("Star Wars: Outer Rim", 3, "J"),
         bg("Startups", 2, "A"),
+        bg("Super Munchkin", 0, "T"),
         bg("Terraforming Mars", 5, "T"),
         bg("Underwater Cities", 5, "A")
     ]
