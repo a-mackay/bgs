@@ -1,5 +1,6 @@
 export function bgData() {
     return [
+        bg("Arkham Horror: The Card Game", 2, "A"),
         bg("AuZtralia", 4, "J"),
         bg("Battlestar Galactica", 4, "J"),
         bg("Biblios", 2, "A"),
@@ -27,7 +28,7 @@ export function bgData() {
         bg("Modern Art", 2, "A"),
         bg("Oceans", 4, "A"),
         bg("On Mars", 5, "A"),
-        bg("Parks", 3, "A"),
+        bg("Parks", 2, "A"),
         bg("Puerto Rico", 0, "T"),
         bg("Root", 4, "A"),
         bg("Secret Hitler", 2, "J"),
