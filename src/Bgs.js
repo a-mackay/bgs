@@ -31,13 +31,17 @@ export function bgData() {
         bg("Parks", 2, "A"),
         bg("Puerto Rico", 0, "T"),
         bg("Root", 4, "A"),
+        bg("Seafall", 3, "J"),
         bg("Secret Hitler", 2, "J"),
         bg("Scythe", 5, "J"),
+        bg("Sprawlopolis", 2, "A"),
         bg("Star Wars: Outer Rim", 3, "J"),
         bg("Startups", 2, "A"),
         bg("Super Munchkin", 0, "T"),
         bg("Terraforming Mars", 5, "T"),
-        bg("Underwater Cities", 5, "A")
+        bg("Tussie Mussie", 1, "A"),
+        bg("Underwater Cities", 5, "A"),
+        bg("Vinhos", 5, "A"),
     ]
 }
 
