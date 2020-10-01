@@ -1,5 +1,7 @@
 export function bgData() {
     return [
+        bg("Anomia", 2, "J"),
+        bg("Archipelago", 4, "J"),
         bg("Arkham Horror: The Card Game", 2, "A"),
         bg("AuZtralia", 4, "J"),
         bg("Battlestar Galactica", 4, "J"),
@@ -15,6 +17,7 @@ export function bgData() {
         bg("Empires", 2, "J"),
         bg("Escape the Dark Castle", 1, "J"),
         bg("Fallen Land", 1, "J"),
+        bg("Fort", 3, "A"),
         bg("Fortress America", 5, "J"),
         bg("Fury of Dracula", 3, "J"),
         bg("Glorantha: The Gods War", 3, "J"),
@@ -29,6 +32,7 @@ export function bgData() {
         bg("Oceans", 4, "A"),
         bg("On Mars", 5, "A"),
         bg("Parks", 2, "A"),
+        bg("Pax Pamir", 4, "A"),
         bg("Puerto Rico", 0, "T"),
         bg("Root", 4, "A"),
         bg("Seafall", 3, "J"),
@@ -41,6 +45,11 @@ export function bgData() {
         bg("Terraforming Mars", 5, "T"),
         bg("Tussie Mussie", 1, "A"),
         bg("Underwater Cities", 5, "A"),
+        bg("Unmatched: BoL Vol 1", 2, "A"),
+        bg("Unmatched: Bruce Lee", 2, "A"),
+        bg("Unmatched: Cobble & Fog", 2, "A"),
+        bg("Unmatched: Ingen vs Raptors", 2, "A"),
+        bg("Unmatched: Robin Hood vs Bigfoot", 2, "A"),
         bg("Vinhos", 5, "A"),
     ]
 }
