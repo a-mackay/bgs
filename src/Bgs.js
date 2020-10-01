@@ -32,7 +32,7 @@ export function bgData() {
         bg("Oceans", 4, "A"),
         bg("On Mars", 5, "A"),
         bg("Parks", 2, "A"),
-        bg("Pax Pamir", 4, "A"),
+        bg("Pax Pamir", 5, "A"),
         bg("Puerto Rico", 0, "T"),
         bg("Root", 4, "A"),
         bg("Seafall", 3, "J"),
