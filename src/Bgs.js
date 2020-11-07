@@ -11,6 +11,7 @@ export function bgData() {
         bg("Chaos Marauders", 2, "J"),
         bg("Chinatown", 2, "A"),
         bg("Concordia", 5, "J"),
+        bg("Corridors of Power", 2, "T"),
         bg("Dark Souls", 4, "M"),
         bg("Deep Sea Adventure", 1, "A"),
         bg("Eclipse", 5, "A"),
