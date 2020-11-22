@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { bgData } from "./Bgs.js";
+import { bgData, Bg } from "./Bgs";
 
 
 function App() {
@@ -33,7 +33,12 @@ function BgTable() {
     )
 }
 
-function BgRow({bg, isOddRow}) {
+interface BgRowProps {
+    bg: Bg;
+    isOddRow: boolean;
+}
+
+function BgRow({bg, isOddRow}: BgRowProps) {
     let className = isOddRow ? "OddTableRow" : "EvenTableRow";
 
     return (

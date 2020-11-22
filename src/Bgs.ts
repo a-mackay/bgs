@@ -1,4 +1,4 @@
-export function bgData() {
+export function bgData(): Bg[] {
     return [
         bg("Anomia", "J"),
         bg("Archipelago", "J"),
@@ -57,7 +57,12 @@ export function bgData() {
     ]
 }
 
-function bg(name, owner) {
+export interface Bg {
+    name: string;
+    owner: string;
+}
+
+function bg(name: string, owner: string): Bg {
     return {
         "name": name,
         "owner": owner,
