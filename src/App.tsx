@@ -1,11 +1,11 @@
+import lake from "./lake.jpg";
 import React from 'react';
 import './App.css';
 import { bgData, Bg } from "./Bgs";
 
-
 function App() {
     return (
-        <div className="App">
+        <div className="App" style={{ backgroundImage:`url(${lake})` }}>
             <BgTable/>
         </div>
     );
