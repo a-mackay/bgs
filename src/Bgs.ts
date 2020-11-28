@@ -53,7 +53,7 @@ export function bgData(): Bg[] {
         bg("Unmatched: Cobble & Fog", "A"),
         bg("Unmatched: Ingen vs Raptors", "A"),
         bg("Unmatched: Robin Hood vs Bigfoot", "A"),
-        bg("Vinhos", "A"),
+        bg("Vinhos Deluxe Edition", "A"),
     ]
 }
 
