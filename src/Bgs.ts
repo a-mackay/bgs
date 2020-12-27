@@ -1,3 +1,8 @@
+// youtube-dl -f 'bestaudio' 'https://www.youtube.com/watch?v=HgNZ_XynaDc'
+// ffmpeg -i 'Ut - Peel Session 1987-HgNZ_XynaDc.webm'
+// Look for "Audio". For example, "Audio: opus"
+// ffmpeg -i 'Ut - Peel Session 1987-HgNZ_XynaDc.webm' -vn -acodec copy 'Ut - Peel Session 1987.opus'
+
 export function bgData(): Bg[] {
     return [
         bg("Anomia", "J"),
