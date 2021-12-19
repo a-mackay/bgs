@@ -5,12 +5,14 @@
 
 export function bgData(): Bg[] {
     return [
+        bg("Aliens: Another Glorious Day in the Corps", "J"),
         bg("Anomia", "J"),
         bg("Archipelago", "J"),
         bg("Arkham Horror: The Card Game", "A"),
         bg("AuZtralia", "J"),
         bg("Battlestar Galactica", "J"),
         bg("Biblios", "A"),
+        bg("Bites", "A"),
         bg("Black Orchestra", "J"),
         bg("Bloodbourne", "J"),
         bg("Caverna", "J"),
@@ -31,6 +33,9 @@ export function bgData(): Bg[] {
         bg("Glorantha: The Gods War", "J"),
         bg("Gugong", "J"),
         bg("Imperial Assault", "J"),
+        bg("Imperium: Classics", "J"),
+        bg("Imperium: Legends", "J"),
+        bg("Kabuto Sumo", "A"),
         bg("Legendary Encounters: Alien", "J"),
         bg("Lord of the Rings", "J"),
         bg("Lord of the Rings: Journeys in Middle-earth", "J"),
@@ -50,6 +55,7 @@ export function bgData(): Bg[] {
         bg("Seafall", "J"),
         bg("Secret Hitler", "J"),
         bg("Scythe", "J"),
+        bg("Skull", "A"),
         bg("Spicy", "A"),
         bg("Sprawlopolis", "A"),
         bg("Star Wars: Outer Rim", "J"),
