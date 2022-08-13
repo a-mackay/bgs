@@ -8,6 +8,10 @@
         "owner": "J"
     },
     {
+        "name": "Anomia: Party Edition",
+        "owner": "M"
+    },
+    {
         "name": "Archipelago",
         "owner": "J"
     },
@@ -73,7 +77,8 @@
     },
     {
         "name": "Dark Souls",
-        "owner": "M"
+        "owner": "M",
+        "isDeceased": true
     },
     {
         "name": "Death Valley",
@@ -82,6 +87,10 @@
     {
         "name": "Deep Sea Adventure",
         "owner": "A"
+    },
+    {
+        "name": "Dungeon Mayhem",
+        "owner": "J"
     },
     {
         "name": "Dustbiters",
@@ -101,7 +110,8 @@
     },
     {
         "name": "Fallen Land",
-        "owner": "J"
+        "owner": "J",
+        "isDeceased": true
     },
     {
         "name": "Fort",
@@ -110,6 +120,10 @@
     {
         "name": "Fortress America",
         "owner": "J"
+    },
+    {
+        "name": "Frostpunk",
+        "owner": "T"
     },
     {
         "name": "Fury of Dracula",
@@ -133,6 +147,10 @@
     },
     {
         "name": "Imperium: Legends",
+        "owner": "J"
+    },
+    {
+        "name": "ISS Vanguard",
         "owner": "J"
     },
     {
@@ -160,6 +178,10 @@
         "owner": "J"
     },
     {
+        "name": "Merchants & Marauders",
+        "owner": "J"
+    },
+    {
         "name": "Mice and Mystics",
         "owner": "J"
     },
@@ -173,7 +195,8 @@
     },
     {
         "name": "Oath",
-        "owner": "A"
+        "owner": "A",
+        "isDeceased": true
     },
     {
         "name": "Oceans",
@@ -181,7 +204,8 @@
     },
     {
         "name": "On Mars",
-        "owner": "A"
+        "owner": "A",
+        "isDeceased": true
     },
     {
         "name": "Parks",
@@ -204,8 +228,16 @@
         "owner": "J"
     },
     {
+        "name": "The Road to Canterbury",
+        "owner": "J"
+    },
+    {
         "name": "Root",
         "owner": "A"
+    },
+    {
+        "name": "Saboteur",
+        "owner": "J"
     },
     {
         "name": "Seafall",
@@ -245,7 +277,8 @@
     },
     {
         "name": "Super Munchkin",
-        "owner": "T"
+        "owner": "T",
+        "isDeceased": true
     },
     {
         "name": "Terraforming Mars",
@@ -273,6 +306,10 @@
     },
     {
         "name": "Unmatched: Cobble & Fog",
+        "owner": "A"
+    },
+    {
+        "name": "Unmatched: Dr. Sattler vs T-Rex",
         "owner": "A"
     },
     {
