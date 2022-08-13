@@ -8,6 +8,10 @@
         "owner": "J"
     },
     {
+        "name": "Anomia: Party Edition",
+        "owner": "M"
+    },
+    {
         "name": "Archipelago",
         "owner": "J"
     },
@@ -73,7 +77,8 @@
     },
     {
         "name": "Dark Souls",
-        "owner": "M"
+        "owner": "M",
+        "isDeceased": true
     },
     {
         "name": "Death Valley",
@@ -105,7 +110,8 @@
     },
     {
         "name": "Fallen Land",
-        "owner": "J"
+        "owner": "J",
+        "isDeceased": true
     },
     {
         "name": "Fort",
@@ -189,7 +195,8 @@
     },
     {
         "name": "Oath",
-        "owner": "A"
+        "owner": "A",
+        "isDeceased": true
     },
     {
         "name": "Oceans",
@@ -197,7 +204,8 @@
     },
     {
         "name": "On Mars",
-        "owner": "A"
+        "owner": "A",
+        "isDeceased": true
     },
     {
         "name": "Parks",
@@ -269,7 +277,8 @@
     },
     {
         "name": "Super Munchkin",
-        "owner": "T"
+        "owner": "T",
+        "isDeceased": true
     },
     {
         "name": "Terraforming Mars",
@@ -297,6 +306,10 @@
     },
     {
         "name": "Unmatched: Cobble & Fog",
+        "owner": "A"
+    },
+    {
+        "name": "Unmatched: Dr. Sattler vs T-Rex",
         "owner": "A"
     },
     {

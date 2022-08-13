@@ -1,7 +1,8 @@
 import lake from "./lake.jpg";
-import { useState, useEffect } from 'react';
-import './App.css';
+import { useState, useEffect } from "react";
+import "./App.css";
 import { bgData, Bg } from "./Bgs";
+import classNames from "classnames";
 
 function App() {
     const [bgs, setBgs] = useState<Bg[]>([])
@@ -47,10 +48,11 @@ interface BgRowProps {
 }
 
 function BgRow({bg, isOddRow}: BgRowProps) {
-    let className = isOddRow ? "OddTableRow" : "EvenTableRow";
+    const rowNumberClassName = isOddRow ? "OddTableRow" : "EvenTableRow";
+    const strikethroughClassName = bg.isDeceased ? "IsDeceased" : null
 
     return (
-        <tr className={className}>
+        <tr className={classNames(rowNumberClassName, strikethroughClassName)}>
             <td>{bg.name}</td>
             <td>{bg.owner}</td>
         </tr>
